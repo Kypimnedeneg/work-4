@@ -1,8 +1,12 @@
-n = int(input("Введите число: "))
-if n <= 999 and n >= 100:
-    a = n % 10 
-    b = n // 10 % 10 
-    c = n // 10 // 10 % 10 
-    print (f"Сумма: {a + b + c}")
-else:
-    print("Число не трёхзначное")
+mol = [int(x) for x in input().split()]
+n = mol[0]
+m = mol[1]
+a = [int(x) for x in input().split()]
+k = set(a)
+b = [int(x) for x in input().split()]
+k1 = set(b)
+spisok = []
+for el in k:
+    if el in k1:
+        spisok.append(el)
+print(spisok)
